@@ -119,11 +119,11 @@ export function Pricing() {
 
                 <hr className="border-[var(--border)] my-4.5" />
 
-                <ul className="flex flex-col gap-2.5 mb-4.5">
+                <ul className="flex flex-col gap-3 mb-4.5">
                   {card.items.map((item, i) => (
                     <li
                       key={i}
-                      className="text-[0.78rem] text-[var(--body)] pl-4 relative leading-[1.6]"
+                      className="text-sm sm:text-[0.95rem] text-[var(--body)] pl-4 relative leading-7"
                     >
                       <span className="absolute left-0 text-slate-800 font-bold">
                         ✓

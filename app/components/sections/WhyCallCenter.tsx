@@ -48,19 +48,19 @@ export function WhyCallCenter() {
           </p>
         </Reveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-11">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3 mt-11">
           {reasons.map((item, idx) => (
             <Reveal key={idx}>
               <div className="rounded-[16px] border-[1.5px] border-[var(--border)] p-6 transition-all duration-200 hover:-translate-y-[3px] hover:shadow-soft">
-                <div className="flex h-[50px] w-[50px] items-center justify-center rounded-full" style={{ backgroundColor: colorBg[item.color as keyof typeof colorBg] }}>
-                  <span className="text-[1.25rem] font-bold" style={{ color: colorText[item.color as keyof typeof colorText] }}>
+                <div className="flex h-[60px] w-[60px] items-center justify-center rounded-full" style={{ backgroundColor: colorBg[item.color as keyof typeof colorBg] }}>
+                  <span className="text-[1.5rem] font-bold" style={{ color: colorText[item.color as keyof typeof colorText] }}>
                     {idx + 1}
                   </span>
                 </div>
-                <h3 className="mt-4 text-[1rem] font-bold text-[var(--ink)]">
+                <h3 className="mt-4 text-[1.05rem] sm:text-[1.15rem] font-bold text-[var(--ink)]">
                   {item.title}
                 </h3>
-                <p className="mt-3 text-[0.84rem] text-[var(--body)] leading-[1.8]">
+                <p className="mt-3 text-sm sm:text-base text-[var(--body)] leading-7">
                   {item.desc}
                 </p>
               </div>

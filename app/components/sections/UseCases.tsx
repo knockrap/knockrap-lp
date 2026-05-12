@@ -60,7 +60,7 @@ export function UseCases() {
           </p>
         </Reveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-11">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3 mt-11">
           {cases.map((c, idx) => (
             <Reveal key={idx}>
               <div
@@ -71,13 +71,13 @@ export function UseCases() {
                 }}
               >
                 <div
-                  className="font-display text-[2.4rem] font-black"
+                  className="font-display text-[2.6rem] sm:text-[3rem] font-black"
                   style={{ color: bgColors[c.color as keyof typeof bgColors] }}
                 >
                   {c.num}
                 </div>
                 <span
-                  className="inline-block text-[0.7rem] font-bold tracking-[0.12em] px-3 py-1 rounded-full mb-3.5"
+                  className="inline-block text-[0.85rem] sm:text-sm font-bold tracking-[0.12em] px-3 py-2 rounded-full mb-3.5"
                   style={{
                     backgroundColor: tagBgs[c.color as keyof typeof tagBgs],
                     color: tagColors[c.color as keyof typeof tagColors],
@@ -85,10 +85,10 @@ export function UseCases() {
                 >
                   {c.tag}
                 </span>
-                <h3 className="font-serif text-[1.02rem] font-bold text-[var(--ink)] mb-3">
+                <h3 className="font-serif text-[1.1rem] sm:text-[1.2rem] font-bold text-[var(--ink)] mb-3">
                   {c.title}
                 </h3>
-                <p className="text-[0.82rem] text-[var(--body)] leading-[1.8]">
+                <p className="text-sm sm:text-base text-[var(--body)] leading-7">
                   {c.desc}
                 </p>
               </div>

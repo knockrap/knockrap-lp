@@ -28,19 +28,19 @@ export function Program() {
       {days.map((item, idx) => (
         <Reveal key={idx}>
           <div className="bg-white rounded-[12px] border-[1.5px] border-[var(--border)] grid grid-cols-[80px_1fr] overflow-hidden transition-all duration-200 hover:border-[var(--blue)]">
-            <div className="bg-[var(--blue)] text-white font-display text-[0.7rem] font-black tracking-[0.06em] flex items-center justify-center text-center leading-[1.35] p-1">
+            <div className="bg-[var(--blue)] text-white font-display text-[0.85rem] sm:text-[0.95rem] font-black tracking-[0.06em] flex items-center justify-center text-center leading-[1.35] p-2">
               DAY<br />{item.day}
             </div>
             <div className="px-6 py-4.5 bg-white">
-              <h4 className="text-[0.88rem] font-bold text-[var(--ink)] mb-1">
+              <h4 className="text-[1rem] sm:text-[1.05rem] font-bold text-[var(--ink)] mb-1">
                 {item.title}
               </h4>
-              <p className="text-[0.78rem] text-[var(--muted)]">{item.desc}</p>
-              <div className="flex flex-wrap gap-1.5 mt-2">
+              <p className="text-sm sm:text-base text-[var(--muted)] leading-7">{item.desc}</p>
+              <div className="flex flex-wrap gap-2 mt-3">
                 {item.tags.map((tag, i) => (
                   <span
                     key={i}
-                    className="bg-[var(--blue-bg)] text-[var(--blue)] px-2.5 py-0.75 rounded-full text-[0.68rem] font-bold tracking-[0.04em]"
+                    className="bg-[var(--blue-bg)] text-[var(--blue)] px-3 py-1 rounded-full text-[0.78rem] font-bold tracking-[0.04em]"
                   >
                     {tag}
                   </span>
@@ -52,14 +52,14 @@ export function Program() {
       ))}
       <Reveal>
         <div className="mt-7 bg-white rounded-[12px] px-7 py-6 border-[1.5px] border-[var(--border)]">
-          <h4 className="text-[0.82rem] font-bold text-[var(--ink)] mb-3.5 flex gap-2 items-center">
+          <h4 className="text-[0.95rem] sm:text-base font-bold text-[var(--ink)] mb-3.5 flex gap-2 items-center">
             ✅ 修了基準の目安
           </h4>
-          <ul className="flex flex-wrap gap-2.5">
+          <ul className="flex flex-wrap gap-3">
             {['配属前に実務経験を確認', '自発的に挨拶・報連相をできる', '電話対応の基本を実務で確認', '改善を繰り返して成長', 'レポートで適性を見える化'].map((item, i) => (
               <li
                 key={i}
-                className="text-[0.8rem] text-[var(--body)] pl-4 relative"
+                className="text-sm sm:text-[0.95rem] text-[var(--body)] pl-6 relative"
               >
                 <span className="absolute left-0 text-[var(--green)] font-bold">
                   ✓
