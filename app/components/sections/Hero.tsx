@@ -10,7 +10,8 @@ export function Hero() {
           src="/images/hero-visual.jpg"
           alt="コールセンター研修の現場イメージ"
           fill
-          className="object-cover object-center brightness-95 contrast-105"
+          sizes="100vw"
+          className="object-cover object-[center_top] sm:object-center brightness-95 contrast-105"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/10 to-transparent" />

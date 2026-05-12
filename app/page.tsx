@@ -8,7 +8,6 @@ import { WhyCallCenter } from '@/app/components/sections/WhyCallCenter'
 import { BeforeAfter } from '@/app/components/sections/BeforeAfter'
 import { ManagerPerspective } from '@/app/components/sections/ManagerPerspective'
 import { Program } from '@/app/components/sections/Program'
-import { Report } from '@/app/components/sections/Report'
 import { Pricing } from '@/app/components/sections/Pricing'
 import { Instructor } from '@/app/components/sections/Instructor'
 import { CTA } from '@/app/components/sections/CTA'
@@ -25,7 +24,6 @@ export default function Home() {
       <BeforeAfter />
       <ManagerPerspective />
       <Program />
-      <Report />
       <Pricing />
       <Instructor />
       <CTA />
