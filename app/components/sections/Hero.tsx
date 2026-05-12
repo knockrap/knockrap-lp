@@ -4,14 +4,14 @@ import Image from 'next/image'
 
 export function Hero() {
   return (
-    <section className="relative w-full max-w-none overflow-hidden bg-[#f3f4f6] min-h-[55vh] md:min-h-[70vh] lg:min-h-[85vh]">
+    <section className="relative w-full max-w-none overflow-hidden bg-[#f3f4f6] flex items-center justify-center min-h-[55vh] md:min-h-[70vh] lg:min-h-[85vh]">
       <div className="absolute inset-0">
         <Image
           src="/images/hero-visual.jpg"
           alt="コールセンター研修の現場イメージ"
           fill
           sizes="100vw"
-          className="object-cover object-[center_top] md:object-center"
+          className="object-contain object-center md:object-cover md:object-center"
           priority
         />
       </div>
