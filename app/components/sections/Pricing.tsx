@@ -103,7 +103,7 @@ export function Pricing() {
                   モニター限定価格（税込）
                 </div>
 
-                <div className="font-display text-[2.4rem] font-black text-slate-950 leading-none">
+                <div className="font-display text-[2.4rem] font-black text-sky-700 leading-none">
                   ¥{card.price.toLocaleString()}
                 </div>
 
