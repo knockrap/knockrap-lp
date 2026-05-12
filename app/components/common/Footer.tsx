@@ -8,7 +8,7 @@ export function Footer() {
       <div className="font-display text-[0.95rem] sm:text-[1rem] font-black tracking-[0.08em] text-white/70">
         Knoock<span className="text-[#d9480f]">Rap</span>
       </div>
-      <p className="text-[0.65rem] sm:text-[0.7rem] text-white/30 text-center sm:text-left">
+      <p className="text-sm sm:text-base text-white/30 text-center sm:text-left">
         © {year} KnoockRap. All rights reserved.
       </p>
     </footer>

@@ -82,10 +82,10 @@ export function Instructor() {
                 >
                   {item.icon}
                 </div>
-                <h3 className="font-serif text-[0.93rem] font-bold text-[var(--ink)] mb-2.5">
+                <h3 className="font-serif text-base font-bold text-[var(--ink)] mb-2.5">
                   {item.title}
                 </h3>
-                <p className="text-[0.79rem] text-[var(--body)] leading-[1.85]">
+                <p className="text-base text-[var(--body)] leading-[1.85]">
                   {item.desc}
                 </p>
               </div>

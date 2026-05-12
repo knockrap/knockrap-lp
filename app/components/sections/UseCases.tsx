@@ -77,7 +77,7 @@ export function UseCases() {
                   {c.num}
                 </div>
                 <span
-                  className="inline-block text-[0.85rem] sm:text-sm font-bold tracking-[0.12em] px-3 py-2 rounded-full mb-3.5"
+                  className="inline-block text-base sm:text-lg font-bold tracking-[0.12em] px-3 py-2 rounded-full mb-3.5"
                   style={{
                     backgroundColor: tagBgs[c.color as keyof typeof tagBgs],
                     color: tagColors[c.color as keyof typeof tagColors],
@@ -88,7 +88,7 @@ export function UseCases() {
                 <h3 className="font-serif text-[1.1rem] sm:text-[1.2rem] font-bold text-[var(--ink)] mb-3">
                   {c.title}
                 </h3>
-                <p className="text-sm sm:text-base text-[var(--body)] leading-7">
+                <p className="text-base sm:text-lg text-[var(--body)] leading-8">
                   {c.desc}
                 </p>
               </div>

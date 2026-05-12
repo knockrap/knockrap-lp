@@ -21,7 +21,7 @@ export function CTA() {
         </Reveal>
 
         <Reveal>
-          <p className="text-[0.9rem] text-white/60 mb-9 leading-[1.95]">
+          <p className="text-base text-white/60 mb-9 leading-[1.95]">
             新人研修・配属前育成・社員のさらなる成長——どのケースでもまずご相談ください。
             <br />
             業種・人数・状況など、どんな内容でもお気軽にどうぞ。
@@ -40,7 +40,7 @@ export function CTA() {
         </Reveal>
 
         <Reveal>
-          <p className="text-[0.7rem] text-white/25 mt-4.5">
+          <p className="text-sm sm:text-base text-white/25 mt-4.5">
             ※いただいたお問い合わせには48時間以内にご返信いたします
           </p>
         </Reveal>

@@ -36,7 +36,7 @@ export function Solution() {
             <h3 className="font-serif text-[clamp(1.3rem,2.3vw,1.9rem)] font-black mb-4 leading-[1.4]">
               コールセンターを使う理由は、<span className="text-[#ff8a5b]">短期間で実戦経験量を稼ぐため</span>です。
             </h3>
-            <p className="text-[0.95rem] text-white/70 leading-[1.9] max-w-[620px]">
+            <p className="text-base text-white/70 leading-[1.9] max-w-[620px]">
               同じ時間でも、実際に対人対応を繰り返すほど学習効果は高まります。問合せ対応や商談準備の前に「話す力」「聴く力」「改善力」を同時に鍛えることができます。
             </p>
           </div>
@@ -46,13 +46,13 @@ export function Solution() {
           {pillars.map((pillar, idx) => (
             <Reveal key={idx}>
               <div className="bg-[var(--bg)] rounded-[14px] p-7 border-[1.5px] border-[var(--border)] transition-all duration-300 hover:border-[var(--blue)] hover:-translate-y-[3px]">
-                <div className="text-[0.68rem] font-bold tracking-[0.2em] text-[var(--blue)] mb-3">
+                <div className="text-sm sm:text-base font-bold tracking-[0.2em] text-[var(--blue)] mb-3">
                   {pillar.pt}
                 </div>
-                <h3 className="font-serif text-[0.98rem] font-bold text-[var(--ink)] mb-2.5">
+                <h3 className="font-serif text-base sm:text-lg font-bold text-[var(--ink)] mb-2.5">
                   {pillar.title}
                 </h3>
-                <p className="text-[0.83rem] text-[var(--body)] leading-[1.85]">
+                <p className="text-base text-[var(--body)] leading-[1.9]">
                   {pillar.desc}
                 </p>
               </div>

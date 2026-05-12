@@ -10,7 +10,7 @@ export function Navigation() {
       </div>
       <Link
         href="#contact"
-        className="bg-gradient-to-r from-red-800 to-red-900 text-white px-[18px] sm:px-[22px] py-[9px] rounded-[6px] text-[0.75rem] sm:text-[0.8rem] font-bold tracking-[0.06em] no-underline transition-all duration-200 hover:shadow-lg hover:shadow-red-900/30 hover:-translate-y-[1px] whitespace-nowrap border border-red-700/50"
+        className="bg-gradient-to-r from-red-800 to-red-900 text-white px-[18px] sm:px-[22px] py-[9px] rounded-[6px] text-base font-bold tracking-[0.06em] no-underline transition-all duration-200 hover:shadow-lg hover:shadow-red-900/30 hover:-translate-y-[1px] whitespace-nowrap border border-red-700/50"
       >
         無料相談
       </Link>

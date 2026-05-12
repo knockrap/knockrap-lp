@@ -37,10 +37,10 @@ export function ManagerPerspective() {
           {points.map((item, idx) => (
             <Reveal key={idx}>
               <div className="rounded-[18px] bg-[var(--bg)] p-6 border-[1.5px] border-[var(--border)] transition-all duration-200 hover:-translate-y-[3px] hover:shadow-soft">
-                <div className="text-[0.82rem] font-bold text-[var(--blue)] mb-3">
+                <div className="text-base font-bold text-[var(--blue)] mb-3">
                   {idx + 1}. {item.title}
                 </div>
-                <p className="text-[0.85rem] text-[var(--body)] leading-[1.85]">
+                <p className="text-base text-[var(--body)] leading-[1.9]">
                   {item.desc}
                 </p>
               </div>

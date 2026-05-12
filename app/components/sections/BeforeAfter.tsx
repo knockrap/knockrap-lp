@@ -21,10 +21,10 @@ export function BeforeAfter() {
         <div className="grid gap-5 mt-11 lg:grid-cols-2">
           <Reveal>
             <div className="rounded-[18px] bg-white p-8 border-[1.5px] border-[var(--border)]">
-              <div className="text-[0.78rem] font-bold text-[var(--blue)] uppercase tracking-[0.22em] mb-4">
+              <div className="text-base font-bold text-[var(--blue)] uppercase tracking-[0.22em] mb-4">
                 導入前
               </div>
-              <ul className="space-y-4 text-[0.86rem] text-[var(--body)] leading-[1.85]">
+              <ul className="space-y-4 text-base text-[var(--body)] leading-[1.9]">
                 <li>・経験量が不足し、実務対応力が見えにくい</li>
                 <li>・配属後に「できない」が発覚しやすい</li>
                 <li>・指導担当者の教育負担が大きい</li>
@@ -35,10 +35,10 @@ export function BeforeAfter() {
 
           <Reveal>
             <div className="rounded-[18px] bg-white p-8 border-[1.5px] border-[var(--border)]">
-              <div className="text-[0.78rem] font-bold text-[var(--green)] uppercase tracking-[0.22em] mb-4">
+              <div className="text-base font-bold text-[var(--green)] uppercase tracking-[0.22em] mb-4">
                 導入後
               </div>
-              <ul className="space-y-4 text-[0.86rem] text-[var(--body)] leading-[1.85]">
+              <ul className="space-y-4 text-base text-[var(--body)] leading-[1.9]">
                 <li>・現場に近い実務経験を短期間で蓄積できる</li>
                 <li>・配属前に強みと課題が明確になる</li>
                 <li>・管理者の教育負担を減らし、配属先との連携がスムーズに</li>

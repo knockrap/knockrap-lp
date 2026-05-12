@@ -21,7 +21,7 @@ export function Report() {
         <div className="grid grid-cols-2 gap-9 mt-11 items-start">
           <Reveal>
             <div className="bg-white rounded-[16px] overflow-hidden shadow-soft border-[1.5px] border-[var(--border)]">
-              <div className="gradient-dark text-white px-7 py-4 text-[0.7rem] font-bold tracking-[0.18em] uppercase">
+              <div className="gradient-dark text-white px-7 py-4 text-sm font-bold tracking-[0.18em] uppercase">
                 📄 個人評価レポート — サンプル
               </div>
               <div className="px-7 py-6">
@@ -34,7 +34,7 @@ export function Report() {
                 ].map((item, idx) => (
                   <div
                     key={idx}
-                    className="flex justify-between items-center py-2.5 border-b-[1px] border-[var(--border)] last:border-none text-[0.82rem]"
+                    className="flex justify-between items-center py-2.5 border-b-[1px] border-[var(--border)] last:border-none text-base"
                   >
                     <span className="text-[var(--muted)]">{item.label}</span>
                     <div className="flex items-center gap-2.5">
@@ -64,8 +64,8 @@ export function Report() {
                     </div>
                   </div>
                 ))}
-                <div className="mt-3.5 bg-[var(--bg)] rounded-[8px] p-4 text-[0.78rem] text-[var(--muted)] leading-[1.85]">
-                  <strong className="text-[var(--blue)] text-[0.72rem]">
+                <div className="mt-3.5 bg-[var(--bg)] rounded-[8px] p-4 text-base text-[var(--muted)] leading-[1.85]">
+                  <strong className="text-[var(--blue)] text-sm">
                     ■ 指導者コメント
                   </strong>
                   <br />
@@ -78,10 +78,10 @@ export function Report() {
           <div className="flex flex-col gap-4.5">
             <Reveal>
               <div className="bg-[var(--bg)] rounded-[12px] px-6 py-5.5 border-l-4 border-[var(--blue)]">
-                <h4 className="font-serif text-[0.9rem] font-bold text-[var(--ink)] mb-2">
+                <h4 className="font-serif text-base font-bold text-[var(--ink)] mb-2">
                   📊 評価項目について
                 </h4>
-                <p className="text-[0.79rem] text-[var(--body)] leading-[1.85]">
+                <p className="text-base text-[var(--body)] leading-[1.85]">
                   A〜E評価＋指導者コメントのセットでお届けします。数字だけでなく「なぜその評価か」を言語化することで、配属後の育て方のヒントになります。
                 </p>
               </div>
@@ -89,10 +89,10 @@ export function Report() {
 
             <Reveal>
               <div className="bg-[var(--bg)] rounded-[12px] px-6 py-5.5 border-l-4 border-[var(--orange)]">
-                <h4 className="font-serif text-[0.9rem] font-bold text-[var(--ink)] mb-2">
+                <h4 className="font-serif text-base font-bold text-[var(--ink)] mb-2">
                   🔍 配属・適性アドバイス付き
                 </h4>
-                <p className="text-[0.79rem] text-[var(--body)] leading-[1.85]">
+                <p className="text-base text-[var(--body)] leading-[1.85]">
                   「営業向き」「接客向き」「事務向き」「管理職素質あり」など、本人の特性を踏まえた配属先のご提案も添えます。採用後の配置決めにお役立てください。
                 </p>
               </div>
@@ -100,10 +100,10 @@ export function Report() {
 
             <Reveal>
               <div className="bg-[var(--bg)] rounded-[12px] px-6 py-5.5 border-l-4 border-[var(--green)]">
-                <h4 className="font-serif text-[0.9rem] font-bold text-[var(--ink)] mb-2">
+                <h4 className="font-serif text-base font-bold text-[var(--ink)] mb-2">
                   ⚠️ 離職リスクの傾向も把握
                 </h4>
-                <p className="text-[0.79rem] text-[var(--body)] leading-[1.85]">
+                <p className="text-base text-[var(--body)] leading-[1.85]">
                   ストレス耐性・継続性・指摘受容力などから、離職リスクの傾向もお伝えします。「この人をどうケアすれば定着するか」まで含めてお届けします。
                 </p>
               </div>

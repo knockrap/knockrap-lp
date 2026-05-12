@@ -28,10 +28,10 @@ export function Pain() {
               <div className="bg-white rounded-[12px] p-5 sm:p-6 border-[1.5px] border-[var(--border)] flex gap-3 sm:gap-3.5 items-start transition-all duration-200 hover:border-[var(--blue)] hover:shadow-soft cursor-default">
                 <div className="w-2 h-2 rounded-full bg-[var(--blue)] flex-shrink-0 mt-2" />
                 <div>
-                  <h3 className="text-[0.88rem] font-bold text-[var(--ink)] mb-1.5">
+                  <h3 className="text-base font-bold text-[var(--ink)] mb-1.5">
                     {item.title}
                   </h3>
-                  <p className="text-[0.78rem] text-[var(--muted)] leading-[1.8]">
+                  <p className="text-base text-[var(--muted)] leading-[1.8]">
                     {item.desc}
                   </p>
                 </div>

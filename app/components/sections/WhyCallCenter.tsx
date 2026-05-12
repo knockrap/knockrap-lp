@@ -60,7 +60,7 @@ export function WhyCallCenter() {
                 <h3 className="mt-4 text-[1.05rem] sm:text-[1.15rem] font-bold text-[var(--ink)]">
                   {item.title}
                 </h3>
-                <p className="mt-3 text-sm sm:text-base text-[var(--body)] leading-7">
+                <p className="mt-3 text-base sm:text-lg text-[var(--body)] leading-8">
                   {item.desc}
                 </p>
               </div>

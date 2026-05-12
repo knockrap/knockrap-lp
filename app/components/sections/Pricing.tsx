@@ -78,28 +78,28 @@ export function Pricing() {
                 }`}
               >
                 {card.badge && (
-                  <div className="absolute -top-[13px] left-1/2 -translate-x-1/2 bg-slate-950 text-white text-[0.63rem] font-bold tracking-[0.12em] px-[18px] py-1 rounded-full whitespace-nowrap">
+                  <div className="absolute -top-[13px] left-1/2 -translate-x-1/2 bg-slate-950 text-white text-sm font-bold tracking-[0.12em] px-[18px] py-1 rounded-full whitespace-nowrap">
                     {card.badge}
                   </div>
                 )}
 
-                <div className="text-[0.68rem] font-bold tracking-[0.3em] text-slate-800 mb-1.5">
+                <div className="text-base font-bold tracking-[0.3em] text-slate-800 mb-1.5">
                   {card.plan}
                 </div>
                 <h3 className="font-serif text-[1.15rem] font-black text-[var(--ink)] mb-4.5">
                   {card.days}
                 </h3>
 
-                <div className="text-[0.7rem] text-red-600 mb-2">
+                <div className="text-base text-red-600 mb-2">
                   通常価格（税込）
                 </div>
                 <div className="font-display text-[1.25rem] font-black text-red-600 line-through leading-none mb-2">
                   ¥{card.original?.toLocaleString()}
                 </div>
 
-                <div className="text-[0.65rem] text-[var(--muted)] mb-2">↓</div>
+                <div className="text-sm text-[var(--muted)] mb-2">↓</div>
 
-                <div className="text-[0.7rem] text-sky-700 font-bold mb-1">
+                <div className="text-base text-sky-700 font-bold mb-1">
                   モニター限定価格（税込）
                 </div>
 
@@ -107,12 +107,12 @@ export function Pricing() {
                   ¥{card.price.toLocaleString()}
                 </div>
 
-                <div className="text-[0.7rem] text-[var(--muted)] mt-1 mb-3">
+                <div className="text-base text-[var(--muted)] mt-1 mb-3">
                   1名あたり
                 </div>
 
                 {card.original && (
-                  <div className="text-[0.78rem] font-bold text-slate-700 mb-4.5">
+                  <div className="text-base font-bold text-slate-700 mb-4.5">
                     {Math.round((1 - card.price / card.original) * 100)}%OFF
                   </div>
                 )}
@@ -123,7 +123,7 @@ export function Pricing() {
                   {card.items.map((item, i) => (
                     <li
                       key={i}
-                      className="text-sm sm:text-[0.95rem] text-[var(--body)] pl-4 relative leading-7"
+                      className="text-base sm:text-lg text-[var(--body)] pl-4 relative leading-8"
                     >
                       <span className="absolute left-0 text-slate-800 font-bold">
                         ✓
@@ -133,7 +133,7 @@ export function Pricing() {
                   ))}
                 </ul>
 
-                <div className="bg-slate-100 rounded-[8px] px-3.5 py-2.75 text-[0.76rem] text-slate-900 font-bold flex gap-2 items-center">
+                <div className="bg-slate-100 rounded-[8px] px-3.5 py-2.75 text-base text-slate-900 font-bold flex gap-2 items-center">
                   🛡 辞退0円保証付き
                 </div>
               </div>
@@ -143,17 +143,17 @@ export function Pricing() {
 
         <Reveal>
           <div className="mt-11 bg-white rounded-[12px] px-6 py-5 border-[1.5px] border-[var(--border)] flex gap-6 flex-wrap">
-            <div className="text-[0.82rem] text-[var(--body)]">
+            <div className="text-base text-[var(--body)]">
               👥 2名以上同時：<strong className="text-slate-900">10% OFF</strong>
             </div>
-            <div className="text-[0.82rem] text-[var(--body)]">
+            <div className="text-base text-[var(--body)]">
               👥👥 5名以上同時：<strong className="text-slate-900">15% OFF</strong>
             </div>
           </div>
         </Reveal>
 
         <Reveal>
-          <p className="text-[0.72rem] text-[var(--muted)] mt-5 leading-[1.85]">
+          <p className="text-sm text-[var(--muted)] mt-5 leading-[1.85]">
             ※「研修中の辞退」とは、本人自由意思による研修途中での辞退・放棄を指します。企業様都合による中断は対象外です。
             <br />
             ※ご依頼企業の所在地により、別途交通費が発生する場合があります。お見積りの際にご確認ください。
