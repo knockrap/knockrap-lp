@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --ink: #151c25;
+    --ink2: #253040;
+    --body: #3d4f60;
+    --muted: #7a8fa0;
+    --border: #dce4ec;
+    --bg: #f4f7fa;
+    --white: #ffffff;
+    --blue: #1f6feb;
+    --blue2: #3d87ff;
+    --blue-bg: #eaf2ff;
+    --orange: #e8732a;
+    --orange-bg: #fff4ec;
+    --green: #1a9e6e;
+    --green-bg: #e6f7f1;
+    --shadow: rgba(21, 28, 37, 0.09);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[var(--bg)] text-[var(--body)] font-sans antialiased leading-[1.75];
+  }
+}
+
+@layer components {
+  .btn-main {
+    @apply inline-flex items-center justify-center px-[34px] py-[15px] rounded-[8px] bg-gradient-to-r from-red-800 to-red-900 text-white font-bold text-[0.9rem] tracking-[0.06em] no-underline transition-all duration-200 hover:shadow-lg hover:shadow-red-900/30 hover:-translate-y-[2px] border border-red-700/50;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center px-[26px] py-[15px] rounded-[8px] bg-transparent text-white/75 font-medium text-[0.9rem] no-underline border-[1.5px] border-white/20 transition-all duration-200 hover:border-white/50 hover:text-white;
+  }
+
+  .sec-label {
+    @apply inline-flex items-center gap-[10px] text-[0.68rem] font-bold tracking-[0.35em] text-red-600 uppercase mb-[12px];
+  }
+
+  .sec-label::before {
+    content: '';
+    @apply block w-[22px] h-[2px] bg-red-600 rounded-[2px];
+  }
+
+  .sec-title {
+    @apply font-serif text-[clamp(1.5rem,3vw,2.5rem)] font-black text-[var(--ink)] leading-[1.4] mb-[14px];
+  }
+
+  .sec-lead {
+    @apply text-[clamp(0.86rem,1.4vw,0.97rem)] text-[var(--muted)] leading-[1.95] max-w-[640px];
+  }
+
+  .reveal {
+    @apply opacity-0 translate-y-[22px] transition-all duration-[650ms];
+  }
+
+  .reveal.on {
+    @apply opacity-100 translate-y-0;
+  }
+}
+
+@layer utilities {
+  .gradient-hero {
+    @apply bg-gradient-to-br from-[#0f1f35] via-[#1a2f4a] to-[#1f3a5a];
+  }
+
+  .gradient-dark {
+    @apply bg-gradient-to-r from-[#0f1f35] to-[#1a3050];
+  }
+
+  .grid-3 {
+    @apply grid grid-cols-3 gap-5;
+  }
+
+  @media (max-width: 920px) {
+    .grid-3 {
+      @apply grid-cols-1;
+    }
+  }
+
+  .shadow-soft {
+    box-shadow: 0 8px 40px var(--shadow);
+  }
+
+  .backdrop-blur-lg {
+    backdrop-filter: blur(14px);
+  }
+}
+
