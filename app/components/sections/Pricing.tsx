@@ -90,16 +90,16 @@ export function Pricing() {
                   {card.days}
                 </h3>
 
-                <div className="text-[0.7rem] text-[var(--muted)] mb-2">
+                <div className="text-[0.7rem] text-red-600 mb-2">
                   通常価格（税込）
                 </div>
-                <div className="font-display text-[1.25rem] font-black text-[var(--muted)] line-through leading-none mb-2">
+                <div className="font-display text-[1.25rem] font-black text-red-600 line-through leading-none mb-2">
                   ¥{card.original?.toLocaleString()}
                 </div>
 
                 <div className="text-[0.65rem] text-[var(--muted)] mb-2">↓</div>
 
-                <div className="text-[0.7rem] text-slate-700 font-bold mb-1">
+                <div className="text-[0.7rem] text-sky-700 font-bold mb-1">
                   モニター限定価格（税込）
                 </div>
 
