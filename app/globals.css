@@ -28,9 +28,63 @@
   }
 }
 
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33% { transform: translateY(-18px) rotate(1.5deg); }
+  66% { transform: translateY(-8px) rotate(-1deg); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-24px) scale(1.04); }
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(180, 30, 30, 0.5); }
+  70% { box-shadow: 0 0 0 14px rgba(180, 30, 30, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(180, 30, 30, 0); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-left {
+  from { opacity: 0; transform: translateX(28px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slide-right {
+  from { opacity: 0; transform: translateX(-28px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes count-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 @layer components {
   .btn-main {
     @apply inline-flex items-center justify-center px-[34px] py-[15px] rounded-[8px] bg-gradient-to-r from-red-800 to-red-900 text-white font-bold text-[0.9rem] tracking-[0.06em] no-underline transition-all duration-200 hover:shadow-lg hover:shadow-red-900/30 hover:-translate-y-[2px] border border-red-700/50;
+    animation: pulse-ring 2.4s ease-out infinite;
   }
 
   .btn-ghost {
@@ -55,11 +109,66 @@
   }
 
   .reveal {
-    @apply opacity-0 translate-y-[22px] transition-all duration-[650ms];
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
   }
 
   .reveal.on {
-    @apply opacity-100 translate-y-0;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .reveal-left {
+    opacity: 0;
+    transform: translateX(-28px);
+    transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .reveal-left.on {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .reveal-right {
+    opacity: 0;
+    transform: translateX(28px);
+    transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .reveal-right.on {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .reveal-scale {
+    opacity: 0;
+    transform: scale(0.94);
+    transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .reveal-scale.on {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .blob {
+    border-radius: 60% 40% 55% 45% / 45% 55% 40% 60%;
+    animation: float-slow 7s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  .animated-gradient-text {
+    background: linear-gradient(90deg, #ff8a5b, #e8732a, #ff5c5c, #ff8a5b);
+    background-size: 300% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 3s linear infinite;
   }
 }
 
@@ -69,7 +178,9 @@
   }
 
   .gradient-dark {
-    @apply bg-gradient-to-r from-[#0f1f35] to-[#1a3050];
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #2a2a2a 100%);
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease infinite;
   }
 
   .grid-3 {
@@ -88,6 +199,18 @@
 
   .backdrop-blur-lg {
     backdrop-filter: blur(14px);
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-slow {
+    animation: float-slow 8s ease-in-out infinite;
+  }
+
+  .animate-pulse-ring {
+    animation: pulse-ring 2.4s ease-out infinite;
   }
 }
 

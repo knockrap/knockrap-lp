@@ -15,6 +15,17 @@ export function Hero() {
           priority
         />
       </div>
+
+      {/* decorative animated blobs */}
+      <div
+        className="blob absolute -top-[15%] -left-[10%] w-[320px] h-[320px] md:w-[520px] md:h-[520px] bg-blue-400/10 pointer-events-none"
+        style={{ animationDelay: '0s' }}
+      />
+      <div
+        className="blob absolute -bottom-[10%] -right-[8%] w-[260px] h-[260px] md:w-[420px] md:h-[420px] bg-red-400/8 pointer-events-none"
+        style={{ animationDelay: '3s' }}
+      />
+
       <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/10 to-transparent pointer-events-none" />
     </section>
   )

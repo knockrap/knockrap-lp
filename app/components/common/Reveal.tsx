@@ -2,12 +2,23 @@
 
 import { useEffect, useRef } from 'react'
 
+type Direction = 'up' | 'left' | 'right' | 'scale' | 'fade'
+
 interface RevealProps {
   children: React.ReactNode
   delay?: number
+  direction?: Direction
 }
 
-export function Reveal({ children, delay = 0 }: RevealProps) {
+const directionClass: Record<Direction, string> = {
+  up: 'reveal',
+  left: 'reveal-right',
+  right: 'reveal-left',
+  scale: 'reveal-scale',
+  fade: 'reveal',
+}
+
+export function Reveal({ children, delay = 0, direction = 'up' }: RevealProps) {
   const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -18,23 +29,20 @@ export function Reveal({ children, delay = 0 }: RevealProps) {
             setTimeout(() => {
               entry.target.classList.add('on')
             }, delay)
+            observer.unobserve(entry.target)
           }
         })
       },
-      { threshold: 0.1 }
+      { threshold: 0.12 }
     )
 
     if (ref.current) {
-      ref.current.classList.add('reveal')
+      ref.current.classList.add(directionClass[direction])
       observer.observe(ref.current)
     }
 
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current)
-      }
-    }
-  }, [delay])
+    return () => observer.disconnect()
+  }, [delay, direction])
 
   return <div ref={ref}>{children}</div>
 }

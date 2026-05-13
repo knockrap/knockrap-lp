@@ -56,7 +56,7 @@ export function Instructor() {
 
   return (
     <section className="sec bg-white">
-      <div className="sec-inner max-w-[1100px] mx-auto px-12 py-[88px]">
+      <div className="sec-inner max-w-[1100px] mx-auto px-4 sm:px-12 py-16 sm:py-[88px]">
         <Reveal>
           <div className="sec-label">Instructor</div>
         </Reveal>
@@ -71,7 +71,7 @@ export function Instructor() {
 
         <div className="grid-3 mt-11">
           {instructors.map((item, idx) => (
-            <Reveal key={idx}>
+            <Reveal key={idx} delay={idx * 70}>
               <div className="bg-[var(--bg)] rounded-[14px] px-6 py-7 text-center border-[1.5px] border-[var(--border)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-soft hover:border-[var(--blue)]">
                 <div
                   className="w-[56px] h-[56px] rounded-[14px] flex items-center justify-center text-[1.5rem] mx-auto mb-4"

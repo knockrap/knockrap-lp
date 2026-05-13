@@ -54,7 +54,7 @@ export function Pricing() {
 
   return (
     <section className="sec bg-[var(--bg)]">
-      <div className="sec-inner max-w-[1100px] mx-auto px-12 py-[88px]">
+      <div className="sec-inner max-w-[1100px] mx-auto px-4 sm:px-12 py-16 sm:py-[88px]">
         <Reveal>
           <div className="sec-label">Pricing</div>
         </Reveal>

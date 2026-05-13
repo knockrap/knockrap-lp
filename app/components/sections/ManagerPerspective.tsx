@@ -20,7 +20,7 @@ const points = [
 export function ManagerPerspective() {
   return (
     <section className="sec bg-white">
-      <div className="sec-inner max-w-[1100px] mx-auto px-12 py-[88px]">
+      <div className="sec-inner max-w-[1100px] mx-auto px-4 sm:px-12 py-16 sm:py-[88px]">
         <Reveal>
           <div className="sec-label">Manager</div>
         </Reveal>
@@ -35,8 +35,8 @@ export function ManagerPerspective() {
 
         <div className="grid gap-5 mt-11 md:grid-cols-2">
           {points.map((item, idx) => (
-            <Reveal key={idx}>
-              <div className="rounded-[18px] bg-[var(--bg)] p-6 border-[1.5px] border-[var(--border)] transition-all duration-200 hover:-translate-y-[3px] hover:shadow-soft">
+            <Reveal key={idx} delay={idx * 90}>
+              <div className="rounded-[18px] bg-[var(--bg)] p-6 border-[1.5px] border-[var(--border)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-soft hover:border-[var(--blue)]">
                 <div className="text-base font-bold text-[var(--blue)] mb-3">
                   {idx + 1}. {item.title}
                 </div>

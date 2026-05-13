@@ -35,14 +35,14 @@ const colorText = {
 export function WhyCallCenter() {
   return (
     <section className="sec bg-white">
-      <div className="sec-inner max-w-[1100px] mx-auto px-12 py-[88px]">
+      <div className="sec-inner max-w-[1100px] mx-auto px-4 sm:px-12 py-16 sm:py-[88px]">
         <Reveal>
           <div className="sec-label">Reason</div>
         </Reveal>
-        <Reveal>
+        <Reveal delay={60}>
           <h2 className="sec-title">なぜコールセンターを使うのか？</h2>
         </Reveal>
-        <Reveal>
+        <Reveal delay={120}>
           <p className="sec-lead">
             実務経験量と高速フィードバック。それを最も効率よく実現できるのが、コールセンターという現場です。
           </p>
@@ -50,9 +50,9 @@ export function WhyCallCenter() {
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3 mt-11">
           {reasons.map((item, idx) => (
-            <Reveal key={idx}>
-              <div className="rounded-[16px] border-[1.5px] border-[var(--border)] p-6 transition-all duration-200 hover:-translate-y-[3px] hover:shadow-soft">
-                <div className="flex h-[60px] w-[60px] items-center justify-center rounded-full" style={{ backgroundColor: colorBg[item.color as keyof typeof colorBg] }}>
+            <Reveal key={idx} delay={idx * 100}>
+              <div className="group rounded-[16px] border-[1.5px] border-[var(--border)] p-6 transition-all duration-300 hover:-translate-y-[4px] hover:shadow-soft">
+                <div className="flex h-[60px] w-[60px] items-center justify-center rounded-full transition-all duration-300 group-hover:scale-110" style={{ backgroundColor: colorBg[item.color as keyof typeof colorBg] }}>
                   <span className="text-[1.5rem] font-bold" style={{ color: colorText[item.color as keyof typeof colorText] }}>
                     {idx + 1}
                   </span>

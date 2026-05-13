@@ -62,9 +62,9 @@ export function UseCases() {
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3 mt-11">
           {cases.map((c, idx) => (
-            <Reveal key={idx}>
+            <Reveal key={idx} delay={idx * 90}>
               <div
-                className={`border-2 rounded-[16px] p-6 sm:p-7 transition-all duration-300 ${c.color}`}
+                className={`border-2 rounded-[16px] p-6 sm:p-7 transition-all duration-300 hover:-translate-y-[4px] hover:shadow-soft ${c.color}`}
                 style={{
                   borderColor: 'var(--border)',
                   borderTop: `4px solid ${tagColors[c.color as keyof typeof tagColors]}`,
