@@ -9,7 +9,7 @@ import { CTA } from '@/app/components/sections/CTA'
 
 export default function Home() {
   return (
-    <main className="w-full overflow-x-hidden">
+    <main className="w-full overflow-x-hidden pt-[60px]">
       <Navigation />
       <Hero />
       <Pain />
