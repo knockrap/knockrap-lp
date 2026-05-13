@@ -8,7 +8,8 @@
       "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('.claude/settings.local.json','utf8'\\)\\); console.log\\('JSON valid'\\)\")",
       "Bash(git add *)",
       "Bash(git commit *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(gh api *)"
     ]
   }
 }
